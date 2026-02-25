@@ -1,61 +1,61 @@
-package orientacaoObjeto.screenmatch;
+package orientacaoObjeto.screenmatch.modelos;
 
-public class Filme {
-    private String nome;
+public class Titulo {
+     private String nome;
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos; 
 
-    String getNome() {
+    public String getNome() {
     return nome;
     }
 
-    int geAnoDeLancamento() {
+    public int geAnoDeLancamento() {
     return anoDeLancamento;
     }
 
-    boolean getIncluidoNoPlano() {
+    public boolean getIncluidoNoPlano() {
     return incluidoNoPlano;
     }
 
-    int getTotalDeAvaliacoes(){
+    public int getTotalDeAvaliacoes(){
     return totalDeAvaliacoes;
     }
 
-    int getDuracaoEmMinutos() {
+    public int getDuracaoEmMinutos() {
     return duracaoEmMinutos;
     }
     
-    void setNome(String nome){
+    public void setNome(String nome){
     this.nome = nome;
     }
 
-    void setAnoDeLancamento(int anoDeLancamento){
+    public void setAnoDeLancamento(int anoDeLancamento){
     this.anoDeLancamento = anoDeLancamento;
     }
 
-    void setIncluidoNoPlano(boolean incluidoNoPlano){
+    public void setIncluidoNoPlano(boolean incluidoNoPlano){
     this.incluidoNoPlano = incluidoNoPlano;
     }
 
 
-    void setDuracaoEmMinutos(int duracaoEmMinutos){
+    public void setDuracaoEmMinutos(int duracaoEmMinutos){
     this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
-    void exibeFichaTecnica() {
+    public void exibeFichaTecnica() {
         System.out.println("Nome do filme: " +nome);
         System.out.println("Ano de lançamento: " +anoDeLancamento);
     }
 
-    void avalia(double nota) {
+    public void avalia(double nota) {
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;
     }
 
-    double pegaMedia() {
+    public double pegaMedia() {
         return somaDasAvaliacoes / totalDeAvaliacoes;
     }
 }
