@@ -12,7 +12,7 @@ public class Titulo {
     return nome;
     }
 
-    public int geAnoDeLancamento() {
+    public int getAnoDeLancamento() {
     return anoDeLancamento;
     }
 

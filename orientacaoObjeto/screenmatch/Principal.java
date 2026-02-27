@@ -1,5 +1,7 @@
 package orientacaoObjeto.screenmatch;
 
+import java.util.ArrayList;
+
 import orientacaoObjeto.screenmatch.calculos.CalculadoraDeTempo;
 import orientacaoObjeto.screenmatch.calculos.FiltroRecomendacao;
 import orientacaoObjeto.screenmatch.modelos.Episodio;
@@ -50,5 +52,21 @@ public class Principal {
         episodio.setSerie(lost);
         episodio.setTotalVisualizacoes(300);
         filtro.filtra(episodio);
-    }
+
+        var filmeDoLuiz = new Filme();
+        filmeDoLuiz.setDuracaoEmMinutos(200);
+        filmeDoLuiz.setNome(" O caçador de Bruxas");
+        filmeDoLuiz.setAnoDeLancamento(2022);
+        filmeDoLuiz.avalia(10);
+
+        ArrayList<Filme> listaDFilmes = new ArrayList<>();
+        listaDFilmes.add(filmeDoLuiz);
+        listaDFilmes.add(meuFilme);
+        listaDFilmes.add(outroFilme);
+        System.out.println("Tamanho da lista: "+listaDFilmes.size());
+        System.out.println("Primeiro filme" +listaDFilmes.get(0).getNome());
+        System.out.println(listaDFilmes);
+        System.out.println("toString do filme " +listaDFilmes.get(0).toString());
+
+        }
 }
