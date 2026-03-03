@@ -1,5 +1,7 @@
 package orientacaoObjeto.desafio.arraylist;
 
+import orientacaoObjeto.screenmatch.modelos.TituloOmdb;
+
 public class Titulo implements Comparable<Titulo> {
     String nome;
 
