@@ -1,11 +1,9 @@
 package orientacaoObjeto.screenmatch.modelos;
 
-import com.google.gson.annotations.SerializedName;
+import orientacaoObjeto.screenmatch.excecao.ErroDeConversaoDeAnoException;
 
 public class Titulo implements Comparable<Titulo> {
-    @SerializedName("Title")
     private String nome;
-    @SerializedName("Year")
     private int anoDeLancamento;
     private boolean incluidoNoPlano;
     private double somaDasAvaliacoes;
@@ -18,7 +16,12 @@ public class Titulo implements Comparable<Titulo> {
     }
 
     public Titulo(TituloOmdb meuTituloOmdb) {
-    this.nome = meuTituloOmdb.title();
+        this.nome = meuTituloOmdb.title();
+
+        if (meuTituloOmdb.year().length() > 4){
+            throw new ErroDeConversaoDeAnoException("Não consegui converter o ano " +
+                "porque tem mais de 04 caracteres.");
+        }
         this.anoDeLancamento = Integer.valueOf(meuTituloOmdb.year());
         this.duracaoEmMinutos = Integer.valueOf(meuTituloOmdb.runtime().substring(0, 2));
     }
