@@ -1,91 +1,128 @@
-# ☕ Java Journey | Backend Developer Path
+# ☕ Java Journey — Backend Development
 
-> Construindo uma base sólida em Java para atuar profissionalmente como Desenvolvedor Backend.
+Repositório dedicado à minha evolução na **Carreira Java da Alura**, onde estou consolidando fundamentos da linguagem e práticas utilizadas no desenvolvimento backend.
 
----
-
-## 🚀 Sobre o Projeto
-
-Este repositório documenta minha evolução na **Carreira Java da Alura**, consolidando fundamentos técnicos e boas práticas de desenvolvimento.
-
-Mais do que exercícios, este projeto representa:
-
-- 📚 Aprendizado estruturado
-- 🧠 Consolidação de fundamentos
-- 💻 Prática consistente
-- 📈 Evolução contínua rumo ao backend profissional
+Aqui registro exercícios, implementações e experimentos realizados ao longo da formação.
 
 ---
 
-## 🎯 Objetivo Profissional
+# 🎯 Objetivo
 
-Meu foco é me tornar um Desenvolvedor Backend especializado em:
-
-- Java
-- Spring Boot
-- APIs REST
-- Banco de Dados Relacional
-- Arquitetura Limpa
-- Microsserviços
-
-Este repositório é parte da construção dessa base.
+Construir uma base sólida em **Java e desenvolvimento backend**, aplicando conceitos fundamentais de engenharia de software e preparando terreno para desenvolvimento de APIs e sistemas escaláveis.
 
 ---
 
-## 🧱 Fundamentos Trabalhados
+# 🧠 Conteúdos Estudados
 
-### ✅ Java Básico
-- Sintaxe e estrutura
-- Tipos primitivos
-- Estruturas condicionais
-- Laços de repetição
-- Métodos
-- Organização de código
+## Fundamentos da Linguagem
 
-### ✅ Programação Orientada a Objetos
-- Classes e Objetos
+- Variáveis e tipos
+- Condicionais
+- Estruturas de repetição
+- Manipulação de Strings
+- Datas e horas
+- Expressões regulares (Regex)
+
+---
+
+## Programação Orientada a Objetos
+
+- Classes e objetos
 - Encapsulamento
 - Herança
 - Polimorfismo
-- Abstração
-- Modificadores de acesso
-
-### 🔄 Em Evolução
-- Collections Framework
-- Tratamento de Exceções
-- Java IO
-- Streams API
-- Testes
-- Spring Boot
-- Integração com Banco de Dados
-
-## 🛠 Stack Utilizada
-
-- **Java 17+**
-- **vscode**
-- **Git**
-- **GitHub**
+- Interfaces
+- Organização de código
 
 ---
 
-## 📊 Metodologia de Estudo
+## Estruturas de Dados
 
-- Prática ativa após cada módulo
-- Refatoração contínua para melhorar legibilidade e organização
-- Separação por domínio de conhecimento
-- Versionamento constante com commits frequentes
-- Aplicação dos conceitos em pequenos projetos práticos
+- Listas
+- Coleções
+- Streams
+- Manipulação de dados com lambdas
 
 ---
 
-## 📈 Roadmap Técnico
+## Fundamentos Web
 
-- [x] Fundamentos Java
+- Redes e protocolos
+- Funcionamento da Web
+- Introdução a APIs
+
+---
+
+## Boas Práticas
+
+- Refatoração de código
+- Organização de projeto
+- Versionamento com Git
+- Estruturação de aplicações Java
+
+---
+
+# 🛠 Tecnologias Utilizadas
+
+- Java 17+
+- Git
+- GitHub
+- IntelliJ IDEA
+
+---
+
+# 📈 Progresso da Formação
+
+### Concluído
+
+- [x] Java: criando sua primeira aplicação
 - [x] Orientação a Objetos
-- [ ] Collections
-- [ ] Exceptions
-- [ ] Streams API
-- [ ] Spring Boot
-- [ ] APIs REST
-- [ ] Banco de Dados + JPA
-- [ ] Deploy de aplicação
+- [x] Listas e coleções
+- [x] Consumindo APIs
+- [x] Variáveis e tipos
+- [x] Condicionais
+- [x] Laços de repetição
+- [x] Data e hora
+- [x] Encapsulamento
+- [x] Herança e polimorfismo
+- [x] Strings e Regex
+- [x] Coleções e Streams
+- [x] Fundamentos da Web
+
+---
+
+### Em andamento
+
+- [ ] Lambdas, Streams e Spring Framework
+- [ ] Persistência de dados com Spring Data JPA
+- [ ] Criação de APIs REST
+- [ ] Tratamento de exceções
+- [ ] Refatoração e boas práticas
+- [ ] Testes automatizados
+- [ ] DevOps com GitHub
+- [ ] Containers com Docker
+
+---
+
+# 🚀 Próximos Passos
+
+- Desenvolvimento de **APIs REST com Spring Boot**
+- Integração com **banco de dados**
+- Aplicação de **arquitetura em camadas**
+- Construção de projetos backend completos
+
+---
+
+# 👨‍💻 Autor
+
+**Luiz Crisanto**
+
+Estudante de Ciência da Computação focado em desenvolvimento backend com Java.
+
+📍 Recife — PE
+
+---
+
+# 📌 Observação
+
+Este repositório representa minha evolução prática na linguagem Java e será continuamente atualizado conforme avanço na trilha de backend.
