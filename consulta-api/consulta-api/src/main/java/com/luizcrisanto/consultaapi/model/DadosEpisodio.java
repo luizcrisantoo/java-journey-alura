@@ -1,4 +1,4 @@
-package com.luizcrisanto.consultaapi.modulo;
+package com.luizcrisanto.consultaapi.model;
 
 import com.fasterxml.jackson.annotation.JsonAlias;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;

@@ -1,4 +1,4 @@
-package com.luizcrisanto.consultaapi.modulo;
+package com.luizcrisanto.consultaapi.model;
 
 import java.time.LocalDate;
 import java.time.format.DateTimeParseException;
