@@ -1,14 +1,21 @@
 # ☕ Java Journey — Backend Development
 
+![Java](https://img.shields.io/badge/Java-17+-000000?style=for-the-badge&logo=openjdk)
+![Spring](https://img.shields.io/badge/Spring_Boot-000000?style=for-the-badge&logo=spring)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-000000?style=for-the-badge&logo=postgresql)
+![Maven](https://img.shields.io/badge/Maven-000000?style=for-the-badge&logo=apachemaven)
+
+---
+
 Repositório dedicado à minha evolução na **Carreira Java da Alura**, onde estou consolidando fundamentos da linguagem e práticas utilizadas no desenvolvimento backend.
 
-Aqui registro exercícios, implementações e experimentos realizados ao longo da formação.
+Aqui registro exercícios, implementações e projetos desenvolvidos ao longo da formação.
 
 ---
 
 # 🎯 Objetivo
 
-Construir uma base sólida em **Java e desenvolvimento backend**, aplicando conceitos fundamentais de engenharia de software e preparando terreno para desenvolvimento de APIs e sistemas escaláveis.
+Construir uma base sólida em **Java e desenvolvimento backend**, aplicando conceitos de engenharia de software, consumo de APIs e persistência de dados, com foco em criação de sistemas escaláveis.
 
 ---
 
@@ -16,110 +23,171 @@ Construir uma base sólida em **Java e desenvolvimento backend**, aplicando conc
 
 ## Fundamentos da Linguagem
 
-- Variáveis e tipos
-- Condicionais
-- Estruturas de repetição
-- Manipulação de Strings
-- Datas e horas
-- Expressões regulares (Regex)
+- Variáveis e tipos  
+- Condicionais  
+- Estruturas de repetição  
+- Manipulação de Strings  
+- Datas e horas  
+- Expressões regulares (Regex)  
 
 ---
 
 ## Programação Orientada a Objetos
 
-- Classes e objetos
-- Encapsulamento
-- Herança
-- Polimorfismo
-- Interfaces
-- Organização de código
+- Classes e objetos  
+- Encapsulamento  
+- Herança  
+- Polimorfismo  
+- Interfaces  
+- Organização de código  
 
 ---
 
 ## Estruturas de Dados
 
-- Listas
-- Coleções
-- Streams
-- Manipulação de dados com lambdas
+- Listas  
+- Coleções  
+- Streams  
+- Manipulação de dados com lambdas  
 
 ---
 
 ## Fundamentos Web
 
-- Redes e protocolos
-- Funcionamento da Web
-- Introdução a APIs
+- Redes e protocolos  
+- Funcionamento da Web  
+- Introdução a APIs  
 
 ---
 
 ## Boas Práticas
 
-- Refatoração de código
-- Organização de projeto
-- Versionamento com Git
-- Estruturação de aplicações Java
+- Refatoração de código  
+- Organização de projeto  
+- Versionamento com Git  
+- Estruturação de aplicações Java  
 
 ---
 
 # 🛠 Tecnologias Utilizadas
 
+### Linguagem
 - Java 17+
-- Git
-- GitHub
-- IntelliJ IDEA
+
+### Backend
+- Spring Boot  
+- Spring Data JPA  
+
+### Banco de Dados
+- PostgreSQL  
+
+### Ferramentas
+- Maven  
+- Git  
+- GitHub  
+- IntelliJ IDEA / VS Code  
+
+### Bibliotecas
+- Jackson (manipulação de JSON)  
 
 ---
 
-# 📈 Progresso da Formação
+# 📊 Progresso da Formação
 
-### Concluído
+### ✅ Concluído
 
-- [x] Java: criando sua primeira aplicação
-- [x] Orientação a Objetos
-- [x] Listas e coleções
-- [x] Consumindo APIs
-- [x] Variáveis e tipos
-- [x] Condicionais
-- [x] Laços de repetição
-- [x] Data e hora
-- [x] Encapsulamento
-- [x] Herança e polimorfismo
-- [x] Strings e Regex
-- [x] Coleções e Streams
-- [x] Fundamentos da Web
+- [x] Java: criando sua primeira aplicação  
+- [x] Orientação a Objetos  
+- [x] Listas e coleções  
+- [x] Consumindo APIs  
+- [x] Variáveis e tipos  
+- [x] Condicionais  
+- [x] Laços de repetição  
+- [x] Data e hora  
+- [x] Encapsulamento  
+- [x] Herança e polimorfismo  
+- [x] Strings e Regex  
+- [x] Coleções e Streams  
+- [x] Fundamentos da Web  
 
 ---
 
-### Em andamento
+### 🔄 Em andamento
 
-- [ ] Lambdas, Streams e Spring Framework
-- [ ] Persistência de dados com Spring Data JPA
-- [ ] Criação de APIs REST
-- [ ] Tratamento de exceções
-- [ ] Refatoração e boas práticas
-- [ ] Testes automatizados
-- [ ] DevOps com GitHub
-- [ ] Containers com Docker
+- [ ] Java: persistência de dados e consultas com Spring Data JPA (82%)  
+- [ ] Java: criando sua primeira API e conectando ao front  
+- [ ] Java exceções: aprenda a criar, lançar e controlar exceções  
+- [ ] Java e refatoração: melhorando códigos com boas práticas  
+- [ ] Boas práticas de programação: melhorando o código de uma API Java  
+- [ ] Boas práticas de programação: automatizando testes com Java  
+- [ ] DevOps: trabalhando com repositórios no GitHub  
+- [ ] DevOps: construindo e gerindo containers com Docker  
+
+---
+
+# 📚 Atualmente Estudando
+
+- Persistência de dados com Spring Data JPA  
+- Criação de APIs REST com Spring Boot  
+- Tratamento de exceções  
+- Boas práticas e refatoração  
+- Testes automatizados  
+- Introdução a Docker  
+
+---
+
+## 📌 Projetos Desenvolvidos
+
+### 🔹 Consulta de Séries (API + Persistência com Banco de Dados)
+
+Projeto desenvolvido durante os estudos de consumo de APIs e persistência de dados.
+
+Funcionalidades:
+- Consumo de API externa (OMDb)  
+- Conversão de JSON com Jackson  
+- Persistência de dados com Spring Data JPA  
+- Relacionamento entre entidades (Série e Episódio)  
+- Listagem e busca de dados no banco  
+
+Arquitetura:
+- Estrutura em camadas (Model, Service, Repository)  
+
+Tecnologias utilizadas:
+- Java  
+- Spring Boot  
+- Spring Data JPA  
+- PostgreSQL  
 
 ---
 
 # 🚀 Próximos Passos
 
-- Desenvolvimento de **APIs REST com Spring Boot**
-- Integração com **banco de dados**
-- Aplicação de **arquitetura em camadas**
-- Construção de projetos backend completos
+- Evoluir no desenvolvimento de **APIs REST com Spring Boot**  
+- Consolidar persistência com **Spring Data JPA**  
+- Aplicar **arquitetura em camadas**  
+- Implementar **tratamento de exceções**  
+- Desenvolver **testes automatizados**  
+- Containerizar aplicações com **Docker**  
+
+---
+
+## 📊 Metodologia de Estudo
+
+- Prática ativa após cada módulo  
+- Implementação de projetos reais baseados no conteúdo estudado  
+- Refatoração contínua para melhoria de código  
+- Organização por domínio de conhecimento  
+- Versionamento constante com Git  
 
 ---
 
 # 👨‍💻 Autor
 
-**Luiz Crisanto**
+**Luiz Crisanto**  
 
-Estudante de Ciência da Computação focado em desenvolvimento backend com Java.
+Estudante de Ciência da Computação focado em desenvolvimento backend com Java.  
 
-📍 Recife — PE
+📍 Recife — PE  
 
 ---
 
