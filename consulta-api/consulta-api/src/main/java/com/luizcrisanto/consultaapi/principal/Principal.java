@@ -1,5 +1,6 @@
 package com.luizcrisanto.consultaapi.principal;
 
+import com.luizcrisanto.consultaapi.model.Categoria;
 import com.luizcrisanto.consultaapi.model.DadosEpisodio;
 import com.luizcrisanto.consultaapi.model.DadosSerie;
 import com.luizcrisanto.consultaapi.model.DadosTemporada;
@@ -37,7 +38,10 @@ public class Principal {
                     1 - Buscar séries
                     2 - Buscar episódios
                     3 - Listar séries buscadas
-                    4 - Buscar série por título
+                    4 - Buscar séries por título
+                    5 - Buscar séries por ator
+                    6 - Buscar Top 5 séries
+                    7 - Buscar séries por categoria
                                     
                     0 - Sair                                 
                     """;
@@ -58,6 +62,15 @@ public class Principal {
                     break;
                 case 4:
                     buscarSeriePorTitulo();
+                    break;
+                case 5:
+                    buscarSeriesPorAtor();
+                    break;
+                case 6:
+                    buscarTop5Series();
+                    break;
+                case 7:
+                    buscarSeriesPorCategoria();
                     break;
                 case 0:
                     System.out.println("Saindo...");
@@ -186,4 +199,93 @@ public class Principal {
         System.out.println("Sinopse: " +serie.getSinopse());
         System.out.println("----------------------------------------");
     }
+
+    private void buscarSeriesPorAtor() {
+        System.out.println(" Qual o nome do ator para busca?");
+        var nomeAtor = leitura.nextLine();
+
+        System.out.println(" Avaliações a partir de que valor?");
+        var avaliacao = leitura.nextDouble();
+        leitura.nextLine(); // importante!
+
+        List<Serie> seriesEncontradas =
+                repositorio.findByAtoresContainingIgnoreCaseAndAvaliacaoGreaterThanEqual(
+                        nomeAtor,
+                        avaliacao
+                );
+
+        if (seriesEncontradas.isEmpty()) {
+            System.out.println("\n Nenhuma série encontrada para esse ator.\n");
+            return;
+        }
+
+        System.out.println("\n========================================");
+        System.out.println(" Séries em que " + nomeAtor + " participou:");
+        System.out.println("========================================\n");
+
+        seriesEncontradas.forEach(this::exibirSerieFormatada);
+    }
+
+    private void buscarTop5Series() {
+
+        List<Serie> serieTop =
+                repositorio.findTop5ByOrderByAvaliacaoDesc();
+
+        if (serieTop.isEmpty()) {
+            System.out.println("\nNenhuma série encontrada.\n");
+            return;
+        }
+
+        System.out.println("\n========================================");
+        System.out.println("TOP 5 SERIES MAIS BEM AVALIADAS");
+        System.out.println("========================================\n");
+
+        serieTop.forEach(this::exibirSerieResumo);
+    }
+
+    private void exibirSerieResumo(Serie serie) {
+        System.out.println(
+                "Titulo: " + serie.getTitulo()
+                + " | Avaliacao: " + serie.getAvaliacao()
+                + " | Temporadas: " + serie.getTotalTemporadas()
+        );
+    }
+
+    private void buscarSeriesPorCategoria() {
+
+        System.out.println("Deseja buscar series de que categoria/genero?");
+        var nomeGenero = leitura.nextLine();
+
+        try {
+
+            Categoria categoria =
+                    Categoria.fromPortugues(nomeGenero);
+
+            List<Serie> seriesPorCategoria =
+                    repositorio.findByGenero(categoria);
+
+            if (seriesPorCategoria.isEmpty()) {
+                System.out.println("\nNenhuma serie encontrada para essa categoria.\n");
+                return;
+            }
+
+            System.out.println("\n========================================");
+            System.out.println("SERIES DA CATEGORIA: " + nomeGenero.toUpperCase());
+            System.out.println("========================================\n");
+
+            seriesPorCategoria.forEach(this::exibirSerieResumo);
+
+        } catch (IllegalArgumentException e) {
+
+            System.out.println("\nCategoria invalida.");
+            System.out.println("Categorias disponiveis:");
+
+            for (Categoria c : Categoria.values()) {
+                System.out.println("- " + c);
+            }
+
+            System.out.println();
+        }
+    }
+
 }
